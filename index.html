@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+ <style>
+    body {
+        background-color: #0f172a;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    h1 {
+        color: #38bdf8;
+        font-size: 42px;
+    }
+
+    p {
+        color: #cbd5e1;
+        font-size: 18px;
+    }
+    button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7dd3fc;
+}
+.projetos {
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.projeto {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: left;
+}
+
+.projeto h3 {
+    color: #38bdf8;
+}
+
+.projeto span {
+    color: #7dd3fc;
+    font-size: 14px;
+}
+</style></head>
+<body><h2>Tecnologias que estou aprendendo</h2>
+
+<div class="tecnologias">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>Git e GitHub</span>
+</div>
+<section class="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+        Estou desenvolvendo minhas habilidades em programação,
+        criando projetos e aprendendo novas tecnologias.
+        Meu objetivo é trabalhar com desenvolvimento de software.
+    </p>
+</section>
+<section class="projetos">
+    <h2>Meus projetos</h2>
+
+    <div class="projeto">
+        <h3>Meu primeiro portfólio</h3>
+        <p>Uma página criada com HTML, CSS e JavaScript.</p>
+        <span>HTML • CSS • JavaScript</span>
+    </div>
+</section>
+<button id="contato">Entrar em contato</button>
+<p id="mensagem-contato"></p>
+
+    <h1>Olá, eu sou Gabriel!</h1>
+    <p>Sou estudante de programação e estou aprendendo desenvolvimento web.</p>
+
+<script>
+    const botaoContato = document.getElementById("contato");
+    const mensagemContato = document.getElementById("mensagem-contato");
+
+    botaoContato.addEventListener("click", function() {
+        mensagemContato.innerText = "Obrigado pelo interesse no meu trabalho!";
+    });
+</script>
+</body>
+</html>
